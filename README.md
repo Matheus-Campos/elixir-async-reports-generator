@@ -1,21 +1,12 @@
 # AsyncReportsGenerator
 
-**TODO: Add description**
+In this project, I was challenged by Rocketseat to develop a software that is able to generate reports about some employees' worked hours, to make it possible, the user must provide an input using .csv files in the following format: name,worked hours,day,month,year.
 
-## Installation
+This software was built to provide the maximum capable speed of processing, using Elixir's tasks (threads) and parallelism to achieve this requirement.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `async_reports_generator` to your list of dependencies in `mix.exs`:
+## Running
 
-```elixir
-def deps do
-  [
-    {:async_reports_generator, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/async_reports_generator](https://hexdocs.pm/async_reports_generator).
-
+1.  Just clone this repository;
+2.  Download the dependencies by running `mix deps.get` (you'll need Elixir installed in your PC);
+3.  Enter the interactive Elixir mode: `iex -S mix`;
+4.  Call AsyncReportsGenerator.generate function, as a parameter, you must pass a list of csv file paths (input).
